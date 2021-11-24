@@ -4861,7 +4861,6 @@ GameObject:
   - component: {fileID: 1926344198}
   - component: {fileID: 1926344202}
   - component: {fileID: 1926344203}
-  - component: {fileID: 1926344204}
   - component: {fileID: 1926344205}
   - component: {fileID: 1926344206}
   - component: {fileID: 1926344207}
@@ -4915,7 +4914,7 @@ MonoBehaviour:
   itemId: 0
   blockName: "\uBE44\uD589\uAE30 \uCC29\uB959\uC804"
   description: 
-  eventHandler: {fileID: 1926344204}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1926344202}
   - {fileID: 1926344193}
@@ -4991,10 +4990,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1926344211}
-  selectedCommands:
-  - {fileID: 1926344222}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -5223,21 +5220,6 @@ MonoBehaviour:
   orthoSizeTweenType: 4
   posTweenType: 4
   rotTweenType: 4
---- !u!114 &1926344204
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1926344191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1926344192}
-  suppressBlockAutoSelect: 0
-  waitForFrames: 1
 --- !u!114 &1926344205
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5695,7 +5677,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1926344222
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5723,7 +5705,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1926344223
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5750,7 +5732,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1926344224
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5777,7 +5759,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1926344225
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5805,7 +5787,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1926344226
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5833,7 +5815,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1926344227
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -6029,7 +6011,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2106985094
 MonoBehaviour:
   m_ObjectHideFlags: 0
