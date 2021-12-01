@@ -8,7 +8,7 @@ public class ChangeRobotName : MonoBehaviour
 
     public void NameChange()
     {
-        Name.nameText = "·Îº¿";
+        Name.nameText = "Ä«¸£¸¸";
         Destroy(gameObject);
     }
 }
