@@ -1591,7 +1591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 2113774142}
+  selectedFlowchart: {fileID: 2106985094}
 --- !u!4 &359962804
 Transform:
   m_ObjectHideFlags: 1
@@ -5168,6 +5168,7 @@ GameObject:
   - component: {fileID: 1218859615}
   - component: {fileID: 1218859617}
   - component: {fileID: 1218859616}
+  - component: {fileID: 1218859618}
   m_Layer: 0
   m_Name: Main2
   m_TagString: Untagged
@@ -5200,7 +5201,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1218859518}
+  - {fileID: 1218859377}
   selectedCommands: []
   variables:
   - {fileID: 1218859349}
@@ -6061,8 +6062,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 11.891745
-    y: 197.66832
+    x: 10.252401
+    y: 205.86504
     width: 94.59013
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6159,6 +6160,7 @@ MonoBehaviour:
   - {fileID: 1218859525}
   - {fileID: 1218859421}
   - {fileID: 1218859420}
+  - {fileID: 1218859618}
   - {fileID: 1218859375}
   - {fileID: 1218859419}
   - {fileID: 1218859418}
@@ -11088,7 +11090,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -331.21112
-    y: 100.741486
+    y: 104.02017
     width: 120.819626
     height: 40
   tint: {r: 1, g: 0.6635277, b: 0.61698115, a: 1}
@@ -14237,6 +14239,23 @@ MonoBehaviour:
   waitUntilFinished: 1
   durationOLD: 0
   targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &1218859618
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218859345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 424
+  indentLevel: 0
+  soundClip: {fileID: 0}
+  volume: 1
+  waitUntilFinished: 0
 --- !u!1 &1250406662
 GameObject:
   m_ObjectHideFlags: 0
@@ -17337,7 +17356,6 @@ GameObject:
   - component: {fileID: 1926344265}
   - component: {fileID: 1926344264}
   - component: {fileID: 1926344263}
-  - component: {fileID: 1926344272}
   - component: {fileID: 1926344273}
   - component: {fileID: 1926344274}
   - component: {fileID: 1926344275}
@@ -17450,8 +17468,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1926344228}
-  selectedCommands: []
+  - {fileID: 1926344200}
+  selectedCommands:
+  - {fileID: 1926344207}
   variables:
   - {fileID: 1926344274}
   - {fileID: 1926344271}
@@ -17758,7 +17777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 13
   indentLevel: 0
-  storyText: "{s=10}\" \uC800\uAE30... {$Playername}\uB2D8 \uB9DE\uC73C\uC2E0\uAC00\uC694?
+  storyText: "{s=10}\" \uC800\uAE30... {$PlayerName}\uB2D8 \uB9DE\uC73C\uC2E0\uAC00\uC694?
     \""
   description: 
   character: {fileID: 732103795}
@@ -17888,7 +17907,6 @@ MonoBehaviour:
   - {fileID: 1926344219}
   - {fileID: 1926344218}
   - {fileID: 1926344217}
-  - {fileID: 1926344272}
   - {fileID: 1926344216}
   - {fileID: 1926344227}
   - {fileID: 1926344226}
@@ -19554,27 +19572,6 @@ MonoBehaviour:
   scope: 2
   key: Minigame
   value: 0
---- !u!114 &1926344272
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1926344191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 105
-  indentLevel: 0
-  _targetGameObject:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  activeState:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1926344273
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -19608,7 +19605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scope: 0
+  scope: 2
   key: PlayerName
   value: PlayerName
 --- !u!114 &1926344275
@@ -22717,7 +22714,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 2113774150}
   selectedCommands: []
   variables:
   - {fileID: 2113774143}
@@ -22761,7 +22759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -128.8191
+    x: -127.81911
     y: 102.96544
     width: 111.6
     height: 40
@@ -22970,7 +22968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 269.06793
+    x: 270.06793
     y: 104.85594
     width: 111.6
     height: 40
@@ -23808,8 +23806,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 149.79033
-    y: 43.85594
+    x: 151.79033
+    y: 44.85594
     width: 96.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -25235,8 +25233,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 2
-  key: Playername
-  value: Playername
+  key: PlayerName
+  value: PlayerName
 --- !u!114 &2113774233
 MonoBehaviour:
   m_ObjectHideFlags: 2
