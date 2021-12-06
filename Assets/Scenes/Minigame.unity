@@ -636,6 +636,7 @@ GameObject:
   - component: {fileID: 457401576}
   - component: {fileID: 457401590}
   - component: {fileID: 457401589}
+  - component: {fileID: 457401591}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -756,6 +757,7 @@ MonoBehaviour:
   variables:
   - {fileID: 457401582}
   - {fileID: 457401585}
+  - {fileID: 457401591}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -1462,6 +1464,21 @@ MonoBehaviour:
   parentBlock: {fileID: 457401587}
   suppressBlockAutoSelect: 0
   targetButton: {fileID: 2125035625}
+--- !u!114 &457401591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457401574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 2
+  key: PlayerName
+  value: PlayerName
 --- !u!1 &474278489
 GameObject:
   m_ObjectHideFlags: 0

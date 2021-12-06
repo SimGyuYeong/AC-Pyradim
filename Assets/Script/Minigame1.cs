@@ -35,7 +35,11 @@ public class Minigame1 : MonoBehaviour
             FailedCanvas.SetActive(true);
             count = 0;
             failedCount++;
-            if (failedCount >= 7) Up7Button.gameObject.SetActive(true);
+            if (failedCount >= 7)
+            {
+                FailedCanvas.SetActive(false);
+                Up7Button.gameObject.SetActive(true);
+            }
         }
     }
 
