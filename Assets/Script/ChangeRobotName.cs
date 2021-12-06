@@ -7,12 +7,14 @@ public class ChangeRobotName : MonoBehaviour
     [SerializeField] private Fungus.Character Name;
     [SerializeField] private Fungus.Character PlayerName;
 
+    [SerializeField] private Fungus.Flowchart chart;
+
     public void NameChange()
     {
-        ChangeName changeName = FindObjectOfType<ChangeName>();
+        var name = chart.Variables[3];
 
         Name.nameText = "Ä«¸£¸¸";
         Destroy(gameObject);
-        PlayerName.nameText = changeName.PlayerName;
+        PlayerName.nameText = name.ToString();
     }
 }
