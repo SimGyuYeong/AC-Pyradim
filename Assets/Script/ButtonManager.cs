@@ -12,8 +12,13 @@ public class ButtonManager : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Escape))
         {
-            showEnding.SetActive(false);
+            CloseEnding();
         }
+    }
+
+    public void CloseEnding()
+    {
+        showEnding.SetActive(false);
     }
 
     public void ShowEnding()

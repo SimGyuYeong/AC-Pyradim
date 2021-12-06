@@ -7,13 +7,37 @@ public class Minigame1 : MonoBehaviour
 {
     [SerializeField] private Image Panel;
     [SerializeField] private GameObject start;
+    [SerializeField] private GameObject FailedCanvas;
+    [SerializeField] private GameObject CompeleteCanvas;
     [SerializeField] private Text matterText;
     [SerializeField] private string[] matterList;
     [SerializeField] private string[] answerList;
+    [SerializeField] private InputField answerInput;
+    [SerializeField] private Button Up7Button;
 
     private float time = 0f;
     private float F_time = 1f;
     private string answer;
+
+    private int count = 0;
+    private int failedCount = 0;
+
+    public void AnswerCheck()
+    {
+        if (answerInput.text == answer)
+        {
+            count++;
+            if (count == 3) CompeleteCanvas.SetActive(true);
+            else RefreshMatter();
+        }
+        else
+        {
+            FailedCanvas.SetActive(true);
+            count = 0;
+            failedCount++;
+            if (failedCount >= 7) Up7Button.gameObject.SetActive(true);
+        }
+    }
 
     public void Fade()
     {
@@ -43,8 +67,9 @@ public class Minigame1 : MonoBehaviour
             Panel.color = alpha;
             yield return null;
         }
-        Panel.gameObject.SetActive(false);
         RefreshMatter();
+        Panel.gameObject.SetActive(false);
+        
     }
 
     private void RefreshMatter()
@@ -54,5 +79,13 @@ public class Minigame1 : MonoBehaviour
 
         matterText.text = matterList[num];
         answer = answerList[num];
+
+        answerInput.text = "";
+    }
+
+    public void Retry()
+    {
+        RefreshMatter();
+        FailedCanvas.SetActive(false);
     }
 }
