@@ -1963,7 +1963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1926344195}
+  selectedFlowchart: {fileID: 2106985094}
 --- !u!4 &359962804
 Transform:
   m_ObjectHideFlags: 1
@@ -22558,9 +22558,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2106985114}
+  - {fileID: 2106985146}
   selectedCommands:
-  - {fileID: 2106985113}
+  - {fileID: 2106985096}
   variables:
   - {fileID: 2106985109}
   - {fileID: 2106985123}
@@ -22608,7 +22608,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: be97b31b534fa2d4db74f4300a8eb0c1, type: 3}
   showAlways: 1
   showCount: 10
   extendPrevious: 0
@@ -23316,7 +23316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 541.10425
+    x: 542.10425
     y: 140.21106
     width: 87.6
     height: 40
@@ -25354,7 +25354,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &2106985141
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -26116,7 +26116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 642.6805
+    x: 643.6805
     y: 138.84497
     width: 101.2
     height: 40
