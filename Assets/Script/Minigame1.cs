@@ -67,12 +67,11 @@ public class Minigame1 : MonoBehaviour
             Panel.color = alpha;
             yield return null;
         }
-        RefreshMatter();
         Panel.gameObject.SetActive(false);
         
     }
 
-    private void RefreshMatter()
+    public void RefreshMatter()
     {
         int count = matterList.Length;
         int num = Random.Range(0, count);
