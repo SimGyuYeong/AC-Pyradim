@@ -260,6 +260,81 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &54744304
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 54744305}
+  - component: {fileID: 54744307}
+  - component: {fileID: 54744306}
+  m_Layer: 5
+  m_Name: Keyy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &54744305
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54744304}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 782867359}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.01, y: 0.02}
+  m_SizeDelta: {x: 6.7, y: 6.7}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &54744306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54744304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7221328237958568768, guid: 983874d26ba1c9f418bc8e4d995d8fc8, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &54744307
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54744304}
+  m_CullTransparentMesh: 1
 --- !u!1 &66524946
 GameObject:
   m_ObjectHideFlags: 0
@@ -6419,9 +6494,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 782867358}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 29.956856, y: -89.77676, z: 4.1841936}
+  m_LocalPosition: {x: 29.956848, y: -89.77673, z: 4.1841936}
   m_LocalScale: {x: 5, y: 5, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 54744305}
   m_Father: {fileID: 1878280908}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10103,6 +10179,7 @@ GameObject:
   - component: {fileID: 1218859630}
   - component: {fileID: 1218859629}
   - component: {fileID: 1218859626}
+  - component: {fileID: 1218859642}
   m_Layer: 0
   m_Name: Main2
   m_TagString: Untagged
@@ -10136,7 +10213,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1218859516}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1218859355}
   variables:
   - {fileID: 1218859349}
   - {fileID: 1218859350}
@@ -10329,7 +10407,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 302
   indentLevel: 0
-  storyText: "{s=10}\"\uC5EC\uAE30\uB294 \uC5F0\uAD6C\uC2E4\uC774\uC608\uC694 \""
+  storyText: "{s=10}\"\uC5EC\uAE30\uB294 .....\uC74C ...\uC5F0\uAD6C\uC2E4\uC774\uC608\uC694
+    \""
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -10548,7 +10627,7 @@ MonoBehaviour:
   storyText: "{s=10}\" \uB124, \uADF8\uB7FC \uBB38\uC744 \uC5F4\uC5B4\uB4DC\uB9AC\uACA0\uC2B5\uB2C8\uB2E4.
     \""
   description: 
-  character: {fileID: 883136813}
+  character: {fileID: 1349317746}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -16119,6 +16198,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1218859639}
   - {fileID: 1218859615}
+  - {fileID: 1218859642}
   - {fileID: 1218859387}
   - {fileID: 1218859386}
   - {fileID: 1218859385}
@@ -19722,6 +19802,23 @@ MonoBehaviour:
   customDescription: 
   fireEvent: 1
   resumeOnLoad: 1
+--- !u!114 &1218859642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218859345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 450
+  indentLevel: 0
+  targetObject: {fileID: 194126311}
+  methodName: NameChange
+  delay: 0
 --- !u!1 &1225018009
 GameObject:
   m_ObjectHideFlags: 0
@@ -24753,7 +24850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8745099, g: 0.4431373, b: 0.14901961, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -24794,8 +24891,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0.28565326, g: 0.3207547, b: 0.3207547, a: 1}
-  m_EffectDistance: {x: 5, y: 5}
+  m_EffectColor: {r: 0.8745099, g: 0.4431373, b: 0.14901961, a: 1}
+  m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
 --- !u!1 &1855232304
 GameObject:
@@ -25498,7 +25595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -13.826173
+    x: -14.925074
     y: 95.72729
     width: 132.63736
     height: 40
@@ -25573,7 +25670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 360.98364, y: -65.15527}
+  scrollPos: {x: 414.82993, y: 15.0645075}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -25585,7 +25682,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1926344245}
+  - {fileID: 1926344192}
   selectedCommands: []
   variables:
   - {fileID: 1926344274}
@@ -25731,8 +25828,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 1926344206}
   - {fileID: 1926344278}
+  - {fileID: 1926344206}
   - {fileID: 1926344203}
   - {fileID: 1926344201}
   - {fileID: 1926344207}
