@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject PauseMenu;
     [SerializeField] private GameObject StartMenu;
     private Fungus.Stop stop;
+    [SerializeField]
+    private Fungus.SaveMenu save;
     private bool isStart = false;
 
     private void Start()
@@ -44,7 +46,6 @@ public class GameManager : MonoBehaviour
     {
         isStart = false;
         Continue();
-        stop.OnEnter();
         StartMenu.SetActive(true);
     }
 }
