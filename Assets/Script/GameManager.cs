@@ -5,34 +5,46 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject PauseMenu;
-    private bool isPause = false;
+    [SerializeField] private GameObject StartMenu;
+    private Fungus.Stop stop;
+    private bool isStart = false;
+
+    private void Start()
+    {
+        stop = FindObjectOfType<Fungus.Stop>();
+    }
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (isStart)
         {
-            if (!isPause) Pause();
-            else if (isPause) NoPause();
+            if (Input.GetKeyDown(KeyCode.Escape)) Pause();
         }
     }
 
     private void Pause()
     {
-        isPause = true;
         PauseMenu.SetActive(true);
         Time.timeScale = 0f;
     }
-
-    private void NoPause()
+    
+    public void Continue()
     {
-        isPause = false;
         PauseMenu.SetActive(false);
-        Time.timeScale = 0f;
+        Time.timeScale = 1f;
     }
 
-    private void Continue()
+    public void GameStart()
     {
-        isPause = false;
-        Time.timeScale = 1f;
+        isStart = true;
+        StartMenu.SetActive(false);
+    }
+
+    public void GotoStart()
+    {
+        isStart = false;
+        Continue();
+        stop.OnEnter();
+        StartMenu.SetActive(true);
     }
 }
