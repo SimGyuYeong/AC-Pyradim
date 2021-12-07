@@ -17,10 +17,29 @@ public class MinigameOther : MonoBehaviour
 
     private int answer;
 
+    private int count = 0;
+
     public void AnswerCheck(int selectNum)
     {
-        if (selectNum == answer) CompeleteCanvas.SetActive(true);
-        else FailedCanvas.SetActive(true);
+        if (selectNum == answer)
+        {
+            count++;
+            if (count >= 3)
+            {
+                CompeleteCanvas.SetActive(true);
+
+            }
+            else
+            {
+                RefreshMatter();
+            }
+
+        }
+        else
+        {
+            FailedCanvas.SetActive(true);
+            count = 0;
+        }
     }
 
     public void RefreshMatter()
