@@ -16,18 +16,13 @@ public class GameManager : MonoBehaviour
         stop = FindObjectOfType<Fungus.Stop>();
     }
 
-    public void Update()
+    public void Pause()
     {
         if (isStart)
         {
-            if (Input.GetKeyDown(KeyCode.Escape)) Pause();
+            PauseMenu.SetActive(true);
+            Time.timeScale = 0f;
         }
-    }
-
-    private void Pause()
-    {
-        PauseMenu.SetActive(true);
-        Time.timeScale = 0f;
     }
     
     public void Continue()
@@ -40,6 +35,11 @@ public class GameManager : MonoBehaviour
     {
         isStart = true;
         StartMenu.SetActive(false);
+    }
+
+    public void StartTrue()
+    {
+        isStart = true;
     }
 
     public void GotoStart()
