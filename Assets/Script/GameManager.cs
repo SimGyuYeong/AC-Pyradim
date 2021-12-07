@@ -10,6 +10,10 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private Fungus.SaveMenu save;
     private bool isStart = false;
+    [SerializeField]
+    GameObject savePanel;
+    [SerializeField]
+    GameObject settingPanel;
 
     private void Start()
     {
@@ -35,6 +39,16 @@ public class GameManager : MonoBehaviour
     {
         isStart = true;
         StartMenu.SetActive(false);
+    }
+
+    public void SettingButton()
+    {
+        settingPanel.SetActive(true);
+    }
+
+    public void BackSettingButton()
+    {
+        settingPanel.SetActive(false);
     }
 
     public void StartTrue()
