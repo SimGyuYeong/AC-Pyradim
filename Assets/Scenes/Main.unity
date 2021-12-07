@@ -10688,6 +10688,8 @@ GameObject:
   - component: {fileID: 1218859626}
   - component: {fileID: 1218859642}
   - component: {fileID: 1218859643}
+  - component: {fileID: 1218859644}
+  - component: {fileID: 1218859645}
   m_Layer: 0
   m_Name: Main2
   m_TagString: Untagged
@@ -10720,9 +10722,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1218859477}
+  - {fileID: 1218859454}
   selectedCommands:
-  - {fileID: 1218859643}
+  - {fileID: 1218859645}
   variables:
   - {fileID: 1218859349}
   - {fileID: 1218859350}
@@ -10884,6 +10886,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1218859633}
+  - {fileID: 1218859644}
   - {fileID: 1218859436}
   - {fileID: 1218859434}
   - {fileID: 1218859607}
@@ -14502,6 +14505,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1218859634}
+  - {fileID: 1218859645}
   - {fileID: 1218859453}
   - {fileID: 1218859452}
   - {fileID: 1218859451}
@@ -20348,6 +20352,56 @@ MonoBehaviour:
   waitUntilFinished: 0
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 2800000, guid: 7200fdce24c049f46986f62295168862, type: 3}
+  targetCamera: {fileID: 0}
+  fadeTweenType: 4
+  orthoSizeTweenType: 4
+  posTweenType: 4
+  rotTweenType: 4
+--- !u!114 &1218859644
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218859345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 452
+  indentLevel: 0
+  duration: 0
+  fadeOut: 0
+  targetView: {fileID: 460640396}
+  waitUntilFinished: 0
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 2800000, guid: 4c57bcf649751504781e32fcca7bfeb8, type: 3}
+  targetCamera: {fileID: 0}
+  fadeTweenType: 4
+  orthoSizeTweenType: 4
+  posTweenType: 4
+  rotTweenType: 4
+--- !u!114 &1218859645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218859345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 453
+  indentLevel: 0
+  duration: 0
+  fadeOut: 0
+  targetView: {fileID: 1548580955}
+  waitUntilFinished: 0
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 2800000, guid: 24fce06bde77f174eb54319772323356, type: 3}
   targetCamera: {fileID: 0}
   fadeTweenType: 4
   orthoSizeTweenType: 4
