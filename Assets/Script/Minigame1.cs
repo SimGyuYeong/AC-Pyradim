@@ -30,12 +30,13 @@ public class Minigame1 : MonoBehaviour
             if (count == 3) CompeleteCanvas.SetActive(true);
             else RefreshMatter();
         }
+
         else
         {
             FailedCanvas.SetActive(true);
             count = 0;
             failedCount++;
-            if (failedCount >= 7) Up7Button.gameObject.SetActive(true);
+            if (failedCount >= 5) Up7Button.gameObject.SetActive(true);
         }
     }
 

@@ -6,26 +6,21 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject PauseMenu;
     [SerializeField] private GameObject StartMenu;
-    private Fungus.Stop stop;
-    [SerializeField]
-    private Fungus.SaveMenu save;
+    
     private bool isStart = false;
-    [SerializeField]
-    GameObject savePanel;
     [SerializeField]
     GameObject settingPanel;
 
-    private void Start()
+    public void Update()
     {
-        stop = FindObjectOfType<Fungus.Stop>();
-    }
-
-    public void Pause()
-    {
-        if (isStart)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            PauseMenu.SetActive(true);
-            Time.timeScale = 0f;
+            Debug.Log(isStart);
+            if (isStart)
+            {
+                PauseMenu.SetActive(true);
+                Time.timeScale = 0f;
+            }
         }
     }
     

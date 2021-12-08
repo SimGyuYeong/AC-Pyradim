@@ -17,7 +17,7 @@ namespace Fungus
     public class CallMethod : Command
     {
         [Tooltip("Target monobehavior which contains the method we want to call")]
-        [SerializeField] protected GameObject targetObject;
+        [SerializeField] public GameObject targetObject;
 
         [Tooltip("Name of the method to call")]
         [SerializeField] protected string methodName = "";
