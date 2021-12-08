@@ -10180,6 +10180,7 @@ GameObject:
   - component: {fileID: 1218859683}
   - component: {fileID: 1218859680}
   - component: {fileID: 1218859679}
+  - component: {fileID: 1218859684}
   m_Layer: 0
   m_Name: Main2
   m_TagString: Untagged
@@ -10200,7 +10201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 1225.0928, y: 41.686924}
+  scrollPos: {x: 1015.2566, y: 51.52298}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -10211,8 +10212,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1218859388}
+  selectedCommands:
+  - {fileID: 1218859623}
   variables:
   - {fileID: 1218859349}
   - {fileID: 1218859350}
@@ -16356,6 +16359,7 @@ MonoBehaviour:
   - {fileID: 1218859522}
   - {fileID: 1218859521}
   - {fileID: 1218859520}
+  - {fileID: 1218859684}
   suppressAllAutoSelections: 0
 --- !u!114 &1218859519
 MonoBehaviour:
@@ -21883,6 +21887,27 @@ MonoBehaviour:
   targetObject: {fileID: 1583981151}
   methodName: NameChange
   delay: 0
+--- !u!114 &1218859684
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218859345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 497
+  indentLevel: 0
+  targetFlowchart: {fileID: 2106985094}
+  targetBlock: {fileID: 2106985146}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!1 &1225018009
 GameObject:
   m_ObjectHideFlags: 0
@@ -31906,7 +31931,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -582.92334, y: -77.927185}
+  scrollPos: {x: -96.325325, y: -60.401386}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 390.8
@@ -31918,7 +31943,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2106985162}
+  - {fileID: 2106985146}
   selectedCommands: []
   variables:
   - {fileID: 2106985109}
