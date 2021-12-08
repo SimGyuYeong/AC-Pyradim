@@ -15,7 +15,7 @@ public class MinigameOther : MonoBehaviour
     [SerializeField] private string[] choiseList;
     
 
-    private int answer;
+    private int answer = 1;
 
     private int count = 0;
 
@@ -44,8 +44,10 @@ public class MinigameOther : MonoBehaviour
 
     public void RefreshMatter()
     {
+        answerText[answer-1].gameObject.SetActive(false);
         int count = matterList.Length;
         int num = Random.Range(0, count);
+        answerText[answer-1].gameObject.SetActive(true);
 
         matterText.text = matterList[num];
         answer = answerList[num];

@@ -27,7 +27,7 @@ public class Minigame1 : MonoBehaviour
         if (answerInput.text == answer)
         {
             count++;
-            if (count == 3) CompeleteCanvas.SetActive(true);
+            if (count == 5) CompeleteCanvas.SetActive(true);
             else RefreshMatter();
         }
 
