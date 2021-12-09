@@ -24,19 +24,22 @@ public class Minigame1 : MonoBehaviour
 
     public void AnswerCheck()
     {
-        if (answerInput.text == answer)
+        if(answerInput.text != "")
         {
-            count++;
-            if (count == 5) CompeleteCanvas.SetActive(true);
-            else RefreshMatter();
-        }
+            if (answerInput.text == answer)
+            {
+                count++;
+                if (count == 5) CompeleteCanvas.SetActive(true);
+                else RefreshMatter();
+            }
 
-        else
-        {
-            FailedCanvas.SetActive(true);
-            count = 0;
-            failedCount++;
-            if (failedCount >= 5) Up7Button.gameObject.SetActive(true);
+            else
+            {
+                FailedCanvas.SetActive(true);
+                count = 0;
+                failedCount++;
+                if (failedCount >= 5) Up7Button.gameObject.SetActive(true);
+            }
         }
     }
 

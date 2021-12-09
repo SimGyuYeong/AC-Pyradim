@@ -11,7 +11,6 @@ public class ChangeRobotName : MonoBehaviour
 
     public void NameChange()
     {
-        Debug.Log("NameChange");
         var name = chart.Variables[3];
 
         Name.nameText = "Ä«¸£¸¸";
