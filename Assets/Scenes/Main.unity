@@ -2991,7 +2991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1218859346}
+  selectedFlowchart: {fileID: 2113774142}
 --- !u!4 &359962804
 Transform:
   m_ObjectHideFlags: 1
@@ -10125,7 +10125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 889.8544, y: 0.4387629}
+  scrollPos: {x: 651.5563, y: 34.481316}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -10139,7 +10139,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1218859518}
   selectedCommands:
-  - {fileID: 1218859678}
+  - {fileID: 1218859524}
   variables:
   - {fileID: 1218859349}
   - {fileID: 1218859602}
@@ -27964,9 +27964,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1926344192}
+  - {fileID: 1926344245}
   selectedCommands:
-  - {fileID: 1926344291}
+  - {fileID: 1926344273}
   variables:
   - {fileID: 1926344271}
   - {fileID: 1926344285}
@@ -30522,7 +30522,7 @@ MonoBehaviour:
   itemId: 453
   indentLevel: 0
   targetObject: {fileID: 1583981151}
-  methodName: NameChange
+  methodName: afterNameChange
   delay: 0
 --- !u!114 &1926344289
 MonoBehaviour:
@@ -30539,7 +30539,7 @@ MonoBehaviour:
   itemId: 452
   indentLevel: 0
   targetObject: {fileID: 1583981151}
-  methodName: NameChange
+  methodName: afterNameChange
   delay: 0
 --- !u!114 &1926344290
 MonoBehaviour:
@@ -30556,7 +30556,7 @@ MonoBehaviour:
   itemId: 451
   indentLevel: 0
   targetObject: {fileID: 1583981151}
-  methodName: NameChange
+  methodName: afterNameChange
   delay: 0
 --- !u!114 &1926344291
 MonoBehaviour:
@@ -30573,7 +30573,7 @@ MonoBehaviour:
   itemId: 450
   indentLevel: 0
   targetObject: {fileID: 1583981151}
-  methodName: NameChange
+  methodName: afterNameChange
   delay: 0
 --- !u!1 &1929578030
 GameObject:
@@ -35454,7 +35454,6 @@ GameObject:
   - component: {fileID: 2113774162}
   - component: {fileID: 2113774163}
   - component: {fileID: 2113774164}
-  - component: {fileID: 2113774165}
   - component: {fileID: 2113774161}
   - component: {fileID: 2113774149}
   - component: {fileID: 2113774181}
@@ -35497,6 +35496,10 @@ GameObject:
   - component: {fileID: 2113774256}
   - component: {fileID: 2113774218}
   - component: {fileID: 2113774257}
+  - component: {fileID: 2113774260}
+  - component: {fileID: 2113774259}
+  - component: {fileID: 2113774258}
+  - component: {fileID: 2113774165}
   m_Layer: 0
   m_Name: Main3
   m_TagString: Untagged
@@ -35529,8 +35532,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2113774150}
-  selectedCommands: []
+  - {fileID: 2113774148}
+  selectedCommands:
+  - {fileID: 2113774161}
   variables:
   - {fileID: 2113774143}
   - {fileID: 2113774240}
@@ -35722,17 +35726,18 @@ MonoBehaviour:
     serializedVersion: 2
     x: 188.3618
     y: 158.62013
-    width: 138.76709
+    width: 120.13696
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 133
-  blockName: Choise2-Normal
+  blockName: Choise2-Sad
   description: 
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 2113774236}
   - {fileID: 2113774252}
+  - {fileID: 2113774165}
   - {fileID: 2113774178}
   - {fileID: 2113774177}
   - {fileID: 2113774176}
@@ -35746,7 +35751,6 @@ MonoBehaviour:
   - {fileID: 2113774168}
   - {fileID: 2113774167}
   - {fileID: 2113774166}
-  - {fileID: 2113774165}
   - {fileID: 2113774256}
   - {fileID: 2113774257}
   - {fileID: 2113774255}
@@ -35806,8 +35810,10 @@ MonoBehaviour:
   commandList:
   - {fileID: 2113774235}
   - {fileID: 2113774251}
+  - {fileID: 2113774259}
   - {fileID: 2113774160}
   - {fileID: 2113774159}
+  - {fileID: 2113774258}
   - {fileID: 2113774158}
   - {fileID: 2113774157}
   - {fileID: 2113774156}
@@ -35839,10 +35845,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 268
   indentLevel: 0
-  storyText: "{s=20}[ \uADF8\uB9AC\uACE0 \uCE74\uB974\uB9CC\uC740 \uAF43 \uD55C\uC1A1\uC774\uB97C
-    \uB450\uACE0 \uB5A0\uB09C\uB2E4 ]\r\n"
+  storyText: "{s=20}\uADF8\uB9AC\uACE0 \uCE74\uB974\uB9CC\uC740 \uAF43 \uD55C\uC1A1\uC774\uB97C
+    \uB450\uACE0 \uB5A0\uB09C\uB2E4."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 310039286}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -35867,9 +35873,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 267
   indentLevel: 0
-  storyText: "{s=20}[ \uBB35\uB150\uD55C\uB2E4 ]"
+  storyText: "{s=20}\uBB35\uB150\uD55C\uB2E4"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 310039286}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -35894,9 +35900,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 264
   indentLevel: 0
-  storyText: "{s=10}\" \uB2E4\uD589\uC774\uC57C...\uC6B0\uB9AC \uC804 \uC138\uACC4\uC778\uB4E4\uACFC
+  storyText: "{s=10}\uB2E4\uD589\uC774\uC57C...\uC6B0\uB9AC \uC804 \uC138\uACC4\uC778\uB4E4\uACFC
     \uB098 \uB610\uD55C \uB2F9\uC2E0\uC5D0\uAC8C \uBBF8\uC548\uD558\uACE0 \uACE0\uB9C8\uC6C0\uC744
-    \uB290\uB07C\uACE0 \uC788\uC5B4. \""
+    \uB290\uB07C\uACE0 \uC788\uC5B4"
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -35923,9 +35929,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 265
   indentLevel: 0
-  storyText: "{s=10}\" \uD558\uB298\uC5D0\uC11C \uBCF4\uACE0 \uC788\uB294 \uAC83\uCC98\uB7FC
+  storyText: "{s=10}\uD558\uB298\uC5D0\uC11C \uBCF4\uACE0 \uC788\uB294 \uAC83\uCC98\uB7FC
     \uC678\uACC4 \uC0DD\uBA85\uCCB4\uC744 \uBB3C\uB9AC\uCE58\uACE0 \uC778\uB958\uB294
-    \uD55C \uBC1C\uC9DD \uB354 \uC131\uC7A5\uD588\uC5B4. \""
+    \uD55C \uBC1C\uC9DD \uB354 \uC131\uC7A5\uD588\uC5B4."
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -35952,8 +35958,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 263
   indentLevel: 0
-  storyText: "{s=10}\" \uBC8C\uC368 \uADF8 \uC77C\uC774 \uC9C0\uB09C\uC9C0 \uBC8C\uC368
-    40\uB144\uC774 \uB42C\uAD6C\uB9CC... \""
+  storyText: "{s=10}\uBC8C\uC368 \uADF8 \uC77C\uC774 \uC9C0\uB09C\uC9C0 \uBC8C\uC368
+    40\uB144\uC774 \uB42C\uAD6C\uB9CC..."
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -35983,7 +35989,7 @@ MonoBehaviour:
   storyText: "{s=10}[ \uADF8\uB85C\uBD80\uD130 40\uB144 \uD6C4 \uD53C\uB77C\uBBF8\uB4DC
     \uC55E ]"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 310039286}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -36008,9 +36014,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 260
   indentLevel: 0
-  storyText: "{s=10}[ \uC628 \uC138\uC0C1\uC774 \uAC80\uB2E4. ]"
+  storyText: "{s=10}\uC628 \uC138\uC0C1\uC774 \uAC80\uB2E4."
   description: 
-  character: {fileID: 883136813}
+  character: {fileID: 310039286}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -36035,9 +36041,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 261
   indentLevel: 0
-  storyText: "{s=10}[ \uC11C\uC11C\uD788 \uB208\uC774 \uAC10\uAE34\uB2E4. ]"
+  storyText: "{s=10}\uC11C\uC11C\uD788 \uB208\uC774 \uAC10\uAE34\uB2E4."
   description: 
-  character: {fileID: 883136813}
+  character: {fileID: 310039286}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -36062,7 +36068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 259
   indentLevel: 0
-  storyText: "{s=10}\" \uD5C8\uBB34\uD558\uB124... \""
+  storyText: "{s=10}\uBB54\uAC00 \uD5C8\uBB34\uD558\uB124..."
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -36089,10 +36095,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 258
   indentLevel: 0
-  storyText: "{s=10}[ \uC8FC\uC778\uACF5\uC740 \uC810\uC810 \uC758\uC2DD\uC774 \uD750\uB824\uC9C0\uB294
-    \uAC83\uC744 \uB290\uB080\uB2E4 ]"
+  storyText: "{s=10}\uC8FC\uC778\uACF5\uC740 \uC810\uC810 \uC758\uC2DD\uC774 \uD750\uB824\uC9C0\uB294
+    \uAC83\uC744 \uB290\uB080\uB2E4."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 310039286}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -36117,10 +36123,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 255
   indentLevel: 0
-  storyText: "{s=10}[ \uB05D\uB124 \uAD00\uC5D0 \uC8FC\uC778\uACF5\uC774 \uB4E4\uC5B4\uAC00\uAC8C
-    \uB41C\uB2E4 ]\r\n"
+  storyText: "{s=10}\uB05D\uB0B4 \uAD00\uC5D0 \uC8FC\uC778\uACF5\uC774 \uB4E4\uC5B4\uAC00\uAC8C
+    \uB41C\uB2E4."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 310039286}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -36145,10 +36151,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 251
   indentLevel: 0
-  storyText: "{s=10}[ \uAD00\uC5D0\uC11C \uB098\uC628 \uC190\uC740 \uC8FC\uC778\uACF5\uC744
-    \uC810\uC810 \uAD00\uC73C\uB85C \uB04C\uACE0 \uAC04\uB2E4 ]"
+  storyText: "{s=10}\uAD00\uC5D0\uC11C \uB098\uC628 \uC190\uC740 \uC8FC\uC778\uACF5\uC744
+    \uC810\uC810 \uAD00\uC73C\uB85C \uB04C\uACE0 \uAC04\uB2E4."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 310039286}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -36173,8 +36179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 252
   indentLevel: 0
-  storyText: "{s=10}\" \uC544..\uC548\uB3FC! \uC774\uAC70 \uB194! \uB193\uC73C\uB77C\uACE0!
-    \""
+  storyText: "{s=10}\uC544..\uC548\uB3FC! \uC774\uAC70 \uB194! \uB193\uC73C\uB77C\uACE0!"
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -36201,11 +36206,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 253
   indentLevel: 0
-  storyText: "{s=10}[ \uAD00\uC740 \uC2EC\uD558\uAC8C \uD754\uB4E4\uB9AC\uB2E4\uAC00
+  storyText: "{s=10}\uAD00\uC740 \uC2EC\uD558\uAC8C \uD754\uB4E4\uB9AC\uB2E4\uAC00
     \uC190\uC774 \uB098\uC624\uBA70 \uC8FC\uC778\uACF5\uC758 \uD314\uACFC \uB2E4\uB9AC\uB97C
-    \uC7A1\uC558\uB2E4 ]"
+    \uC7A1\uC558\uB2E4."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 310039286}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -36225,24 +36230,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 2113774141}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 254
+  itemId: 461
   indentLevel: 0
-  storyText: "{s=10}[ \uC8FC\uC778\uACF5\uC740 \uAD00\uC744 \uBCF8\uB2E4 ]"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  duration: 0
+  fadeOut: 0
+  targetView: {fileID: 212510830}
+  waitUntilFinished: 0
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  targetCamera: {fileID: 0}
+  fadeTweenType: 4
+  orthoSizeTweenType: 4
+  posTweenType: 4
+  rotTweenType: 4
 --- !u!114 &2113774166
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -36257,10 +36260,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 250
   indentLevel: 0
-  storyText: "{s=10}[ \uC8FC\uC778\uACF5\uC740 \uBB54\uAC00 \uBD88\uAE38\uD55C \uC608\uAC10\uC774
-    \uB4E4\uC5C8\uB2E4. ]"
+  storyText: "{s=10}\uC8FC\uC778\uACF5\uC740 \uBB54\uAC00 \uBD88\uAE38\uD55C \uC608\uAC10\uC774
+    \uB4E4\uC5C8\uB2E4."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 310039286}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -36285,7 +36288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 249
   indentLevel: 0
-  storyText: "{s=10}\" \uC57C..\uC790..\uC7A0\uC2DC\uB9CC! \""
+  storyText: "{s=10}\uC544 \uC544\uB2C8.. \uC790..\uC7A0\uC2DC\uB9CC!"
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -36312,8 +36315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 177
   indentLevel: 0
-  storyText: "{s=10}\" \uBD80\uBAA8\uB2D8\uC5D0\uAC90 \uC81C\uAC00 \uC804\uD654\uB4DC\uB9AC\uACA0\uC2B5\uB2C8\uB2E4
-    \""
+  storyText: "{s=10}\uBD80\uBAA8\uB2D8\uC5D0\uAC90 \uC81C\uAC00 \uC804\uD654\uB4DC\uB9AC\uACA0\uC2B5\uB2C8\uB2E4"
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -36340,7 +36342,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 176
   indentLevel: 0
-  storyText: "{s=10}\" \uBB50\uB77C\uACE0...? \""
+  storyText: "{s=10}\uBB50\uB77C\uACE0...? \uADF8\uAC8C \uC9C0\uAE08 \uBB34\uC2A8
+    \uBBF8\uCE5C\uC18C\uB9AC\uC57C"
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -36367,8 +36370,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 175
   indentLevel: 0
-  storyText: "{s=10}\" \uB2F9\uC2E0\uC758 \uD76C\uC0DD\uC740 \uAE38\uC774 \uAE30\uC5B5\uB420
-    \uAC83\uC785\uB2C8\uB2E4. \""
+  storyText: "{s=10}\uB2F9\uC2E0\uC758 \uD76C\uC0DD\uC740 \uAE38\uC774 \uAE30\uC5B5\uB420
+    \uAC83\uC785\uB2C8\uB2E4."
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -36395,7 +36398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 173
   indentLevel: 0
-  storyText: "{s=10}\" ...\uBB50! \""
+  storyText: "{s=10}...\uBB50!"
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -36422,7 +36425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 172
   indentLevel: 0
-  storyText: "{s=10}\" ... {$PlayerName} \uB2D8 \""
+  storyText: "{s=10}{$PlayerName} \uB2D8..."
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -36449,7 +36452,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 171
   indentLevel: 0
-  storyText: "{s=10}\" \uC57C! \uB0B4 \uB9D0 \uC548\uB4E4\uB824? \""
+  storyText: "{s=10}\uC57C! \uB0B4 \uB9D0 \uC548\uB4E4\uB824?"
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -36476,7 +36479,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 169
   indentLevel: 0
-  storyText: '{s=10}" ... "'
+  storyText: '{s=10}...'
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -36503,7 +36506,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 170
   indentLevel: 0
-  storyText: "{s=10}\" \uBE68\uB9AC \uB0A0 \uB0B4\uBCF4\uB0B4 \uC918! \""
+  storyText: "{s=10}\uBE68\uB9AC \uB0A0 \uB0B4\uBCF4\uB0B4 \uC918!"
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -36530,8 +36533,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 168
   indentLevel: 0
-  storyText: "{s=10}\" \uB0B4\uAC00 \uBB58\uBBFF\uACE0 \uB2F9\uC2E0\uC744 \uC704\uD574
-    \uB0B4\uAC00 \uC8FD\uC5B4...?! \""
+  storyText: "{s=10}\uB0B4\uAC00 \uBB58\uBBFF\uACE0 \uB2F9\uC2E0\uC744 \uC704\uD574
+    \uB0B4\uAC00 \uC8FD\uC5B4...?!"
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -36558,7 +36561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 166
   indentLevel: 0
-  storyText: '{s=10}" ... "'
+  storyText: '{s=10}...'
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -36585,10 +36588,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 165
   indentLevel: 0
-  storyText: "{s=10}[ \uBB34\uC2A8 \uBBF8\uCE5C \uC18C\uB9AC\uC608\uC694! \uC800\uB294
-    \uBABB\uC8FD\uC2B5\uB2C8\uB2E4! ]"
+  storyText: "{s=10}\uBB34\uC2A8 \uBBF8\uCE5C \uC18C\uB9AC\uC608\uC694! \uC800\uB294
+    \uBABB\uC8FD\uC2B5\uB2C8\uB2E4!"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 310039286}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -36652,6 +36655,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 2113774237}
   - {fileID: 2113774253}
+  - {fileID: 2113774260}
   - {fileID: 2113774189}
   - {fileID: 2113774249}
   - {fileID: 2113774188}
@@ -36699,9 +36703,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 247
   indentLevel: 0
-  storyText: " {s=10}\" \uADF8\uB7FC \uB2F9\uC2E0\uC758 \uD76C\uC0DD\uC740 \uAE38\uC774
-    \uC5ED\uC0AC\uC801\uC73C\uB85C \uAE30\uC5B5\uB420 \uAC83\uC785\uB2C8\uB2E4. {$Playername}\uB2D8
-    \""
+  storyText: " {s=10}\uADF8\uB7FC \uB2F9\uC2E0\uC758 \uD76C\uC0DD\uC740 \uAE38\uC774
+    \uC5ED\uC0AC\uC801\uC73C\uB85C \uAE30\uC5B5\uB420 \uAC83\uC785\uB2C8\uB2E4. {$Playername}\uB2D8"
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -36728,7 +36731,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 139
   indentLevel: 0
-  storyText: " {s=10}\" \uAC10\uC0AC\uD569\uB2C8\uB2E4. \""
+  storyText: " {s=10}\uAC10\uC0AC\uD569\uB2C8\uB2E4."
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -36755,8 +36758,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 140
   indentLevel: 0
-  storyText: " {s=10}\" \uBB3C\uB860 \uC5B4\uBA38\uB2C8\uD55C\uD14C\uB294 {$PlayerName}\uB2D8\uC758
-    \uD76C\uC0DD\uC744 \uB9D0\uC500\uB4DC\uB9B4 \uAC83\uC785\uB2C8\uB2E4. \""
+  storyText: " {s=10}\uBB3C\uB860 \uC5B4\uBA38\uB2C8\uD55C\uD14C\uB294 {$PlayerName}\uB2D8\uC758
+    \uD76C\uC0DD\uC744 \uB9D0\uC500\uB4DC\uB9B4 \uAC83\uC785\uB2C8\uB2E4."
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -36783,8 +36786,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 138
   indentLevel: 0
-  storyText: " {s=10}\" \uADF8\uB7FC...\uC800 \uC5C4\uB9C8\uD55C\uD14C \uC5F0\uB77D
-    \uB4DC\uB9B4 \uC218 \uC788\uB098\uC694? \""
+  storyText: " {s=10}\uADF8\uB7FC... \uC800 \uC5C4\uB9C8\uD55C\uD14C \uC5F0\uB77D
+    \uB4DC\uB9B4 \uC218 \uC788\uB098\uC694?"
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -36811,11 +36814,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 137
   indentLevel: 0
-  storyText: " {s=10}[ \uC8FC\uC778\uACF5\uC740 \uD06C\uAC8C \uC228\uC744 \uB4E4\uC774
-    \uC26C\uACE0 \uACB0\uC2EC\uD55C \uB4EF \uAD00\uC5D0 \uB2E4\uAC00\uAC04\uB2E4 
-    ]"
+  storyText: " {s=10}\uC8FC\uC778\uACF5\uC740 \uD06C\uAC8C \uC228\uC744 \uB4E4\uC774
+    \uC26C\uACE0 \uACB0\uC2EC\uD55C \uB4EF \uAD00\uC5D0 \uB2E4\uAC00\uAC04\uB2E4."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 310039286}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -36840,9 +36842,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 246
   indentLevel: 0
-  storyText: " {s=10}\" \uB9C8\uC74C\uC758 \uC900\uBE44\uAC00 \uB418\uC167\uB2E4\uBA74
+  storyText: " {s=10}\uB9C8\uC74C\uC758 \uC900\uBE44\uAC00 \uB418\uC167\uB2E4\uBA74
     \uAD00\uC548\uC5D0 \uB4E4\uC5B4\uAC00\uC8FC\uC2DC\uBA74 \uB429\uB2C8\uB2E4. \uC815\uB9D0
-    \uAC10\uC0AC\uD569\uB2C8\uB2E4! \""
+    \uAC10\uC0AC\uD569\uB2C8\uB2E4!"
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -36869,8 +36871,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 135
   indentLevel: 0
-  storyText: " {s=10}\" {$PlayerName}\uB2D8 \uC815\uB9D0\uB85C \uAC10\uC0AC\uB4DC\uB9BD\uB2C8\uB2E4
-    \""
+  storyText: " {s=10}{$PlayerName}\uB2D8 \uC815\uB9D0 \uD798\uB4E0 \uACB0\uC815\uC774\uC168\uC744\uD150\uB370
+    \uAC10\uC0AC\uB4DC\uB9BD\uB2C8\uB2E4."
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -36897,10 +36899,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 136
   indentLevel: 0
-  storyText: "{s=10}[ \uB124... \uC800 \uD558\uB098 \uD76C\uC0DD\uD574\uC11C \uC778\uB958\uB97C
-    \uAD6C\uD558\uACA0\uC2B5\uB2C8\uB2E4! ]"
+  storyText: "{s=10}\uB124... \uC800 \uD558\uB098 \uD76C\uC0DD\uD574\uC11C \uC778\uB958\uB97C
+    \uAD6C\uD558\uACA0\uC2B5\uB2C8\uB2E4!"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 883136813}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -36925,7 +36927,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 124
   indentLevel: 0
-  storyText: "{s=10}' \uC5B4\uB5BB\uAC8C \uD574\uC57C\uD558\uC9C0? '"
+  storyText: "{s=10}(\uC5B4\uB5BB\uAC8C \uD574\uC57C\uD558\uC9C0?)"
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -36937,7 +36939,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1362956713}
 --- !u!114 &2113774191
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -36952,7 +36954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 245
   indentLevel: 0
-  storyText: "{s=10}\" \uC81C\uBC1C \uBD80\uD0C1\uB4DC\uB9BD\uB2C8\uB2E4... \""
+  storyText: "{s=10}\uC81C\uBC1C \uBD80\uD0C1\uB4DC\uB9BD\uB2C8\uB2E4..."
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -36979,8 +36981,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 125
   indentLevel: 0
-  storyText: "{s=10}\" \uB124?? \uC81C\uAC00\uC694?? \uC804 \uC544\uC9C1 20\uB300
-    \uC911\uBC18\uC778\uB370.. \""
+  storyText: "{s=10}\uB124?? \uC81C\uAC00\uC694?? \uC804 \uC544\uC9C1 20\uB300 \uC911\uBC18\uC778\uB370.."
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -37007,10 +37008,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 244
   indentLevel: 0
-  storyText: "{s=10}\" \uC5B4\uB824\uC6B4 \uBD80\uD0C1\uC774\uACA0\uC9C0\uB9CC, \uB2F9\uC2E0\uC744
+  storyText: "{s=10}\uC5B4\uB824\uC6B4 \uBD80\uD0C1\uC774\uACA0\uC9C0\uB9CC, \uB2F9\uC2E0\uC744
     \uD76C\uC0DD\uD574\uC11C \uBA87 \uBC88\uC774\uB098 \uBC18\uBCF5\uD588\uB294\uC9C0\uB3C4
     \uBAA8\uB974\uB294 \uC774 \uC0AC\uD0DC\uB97C \uB9C9\uC544\uC11C \uC778\uB958\uB97C
-    \uC9C0\uCF1C\uC8FC\uC2E4 \uC218 \uC788\uB098\uC694...? \""
+    \uC9C0\uCF1C\uC8FC\uC2E4 \uC218 \uC788\uB098\uC694...?"
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -37037,8 +37038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 119
   indentLevel: 0
-  storyText: "{s=10}\" \uD5C9.. \uADF8\uB7EC\uBA74 \uC5B4\uB5BB\uAC8C \uD574\uC57C\uD558\uC8E0?
-    \""
+  storyText: "{s=10}\uD5C9.. \uADF8\uB7EC\uBA74 \uC5B4\uB5BB\uAC8C \uD574\uC57C\uD558\uC8E0.."
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -37065,8 +37065,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 122
   indentLevel: 0
-  storyText: "{s=10}\" \uBC14\uB85C \uADF8 \uC678\uACC4 \uC0DD\uBA85\uCCB4\uB4E4\uC774
-    \uB610 \uC628\uB2E4\uB294 \uAC83\uC785\uB2C8\uB2E4. \""
+  storyText: "{s=10}\uBC14\uB85C \uADF8 \uC678\uACC4 \uC0DD\uBA85\uCCB4\uB4E4\uC774
+    \uB610 \uC628\uB2E4\uB294 \uAC83\uC785\uB2C8\uB2E4."
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -37093,9 +37093,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 121
   indentLevel: 0
-  storyText: "{s=10}\" \uADF8\uB9AC\uACE0 \uD604\uC7AC, 2021\uB144 \uC9C0\uAD6C\uC5D0
-    \uB610 \uD55C \uBC88 \uD070 \uC704\uAE30\uAC00 \uC0DD\uACA8\uB0AC\uC2B5\uB2C8\uB2E4.
-    \""
+  storyText: "{s=10}\uADF8\uB9AC\uACE0 \uD604\uC7AC, 2021\uB144 \uC9C0\uAD6C\uC5D0
+    \uB610 \uD55C \uBC88 \uD070 \uC704\uAE30\uAC00 \uC0DD\uACA8\uB0AC\uC2B5\uB2C8\uB2E4."
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -37122,7 +37121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 117
   indentLevel: 0
-  storyText: "{s=10}\" \uC5B4\uC6B0... \uCDA9\uACA9\uC801\uC774\uB124\uC694. \""
+  storyText: "{s=10}\uC5B4\uC6B0... \uCDA9\uACA9\uC801\uC774\uB124\uC694."
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -37149,9 +37148,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 102
   indentLevel: 0
-  storyText: "{s=10}\" \uB9DE\uC544\uC694. \uADF8 \uC0AC\uB78C\uC758 \uC601\uD63C\uC744
+  storyText: "{s=10}\uB9DE\uC544\uC694. \uADF8 \uC0AC\uB78C\uC758 \uC601\uD63C\uC744
     \uAC00\uC838\uAC00\uB294 \uACF3\uC774 \uBC29\uAE08 {$PlayerName}\uB2D8\uC774
-    \uB9CC\uB4E0 \uC800 \uD30C\uB77C\uC624 \uAD00\uC785\uB2C8\uB2E4. \""
+    \uB9CC\uB4E0 \uC800 \uD30C\uB77C\uC624 \uAD00\uC785\uB2C8\uB2E4."
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -37178,9 +37177,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 101
   indentLevel: 0
-  storyText: "{s=10}\" \uB124\uC5D0....?! \uC774 \uD53C\uB77C\uBBF8\uB4DC\uB97C \uC2E4\uD589\uD558\uB824\uBA74
-    \uC0AC\uB78C\uC758 \uC601\uD63C\uC744 \uBC14\uCCD0\uC57C \uD558\uB294 \uAC70\uC608\uC694?
-    \"\n"
+  storyText: "{s=10}\uB124\uC5D0....?! \uC774 \uD53C\uB77C\uBBF8\uB4DC\uB97C \uC2E4\uD589\uD558\uB824\uBA74
+    \uC0AC\uB78C\uC758 \uC601\uD63C\uC744 \uBC14\uCCD0\uC57C \uD558\uB294 \uAC70\uC608\uC694?"
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -37207,8 +37205,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 114
   indentLevel: 0
-  storyText: "{s=10}\" \uB9CE\uC774 \uB2F9\uD669\uC2A4\uB7FD\uACA0\uC9C0\uB9CC, \uD639\uC2DC
-    \uBD80\uD0C1 \uB4E4\uC5B4\uC8FC\uC2E4 \uC218 \uC788\uB098\uC694?\""
+  storyText: "{s=10}\uB9CE\uC774 \uB2F9\uD669\uC2A4\uB7FD\uACA0\uC9C0\uB9CC, \uD639\uC2DC
+    \uBD80\uD0C1 \uB4E4\uC5B4\uC8FC\uC2E4 \uC218 \uC788\uB098\uC694?"
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -37235,8 +37233,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 115
   indentLevel: 0
-  storyText: "{s=10}\" \uB124. \uBC14\uB85C {color=red}'\uC778\uAC04\uC758 \uC601\uD63C'{color=white}\uC774\uC8E0
-    \""
+  storyText: "{s=10}\uB124, \uBC14\uB85C [ {color=red}\uC778\uAC04\uC758 \uC601\uD63C
+    {color=white}] \uC774\uC8E0"
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -37263,7 +37261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 116
   indentLevel: 0
-  storyText: "{s=10}\" \uB9C9\uAC15\uD55C...\uD798? \""
+  storyText: "{s=10}\uB9C9\uAC15\uD55C... \uD798?"
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -37290,9 +37288,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 113
   indentLevel: 0
-  storyText: "{s=10}\" \uADF8\uB807\uC2B5\uB2C8\uB2E4. \uD558\uC9C0\uB9CC \uC774
-    \uAC70\uB300\uD55C \uD53C\uB77C\uBBF8\uB4DC\uB97C \uC6B4\uD589\uD558\uAE30 \uC704\uD574\uC11C\uB294
-    \uB9C9\uAC15\uD55C \uD798\uC774 \uD544\uC694\uD588\uC8E0. \""
+  storyText: "{s=10}\uADF8\uB807\uC2B5\uB2C8\uB2E4. \uD558\uC9C0\uB9CC \uC774 \uAC70\uB300\uD55C
+    \uD53C\uB77C\uBBF8\uB4DC\uB97C \uC6B4\uD589\uD558\uAE30 \uC704\uD574\uC11C\uB294
+    \uB9C9\uAC15\uD55C \uD798\uC774 \uD544\uC694\uD588\uC8E0."
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -37319,9 +37317,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 99
   indentLevel: 0
-  storyText: "{s=10}\" \uC81C\uAC00 \uC788\uB294 \uACF3\uC774 \uD53C\uB77C\uBBF8\uB4DC
+  storyText: "{s=10}\uC81C\uAC00 \uC788\uB294 \uACF3\uC774 \uD53C\uB77C\uBBF8\uB4DC
     \uC548\uC778\uB370 \uB3D9\uC2DC\uC5D0 \uAC70\uB300 \uC288\uD37C \uCEF4\uD4E8\uD130
-    \uB77C\uACE0\uC694? \""
+    \uB77C\uACE0\uC694?"
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -37348,9 +37346,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 242
   indentLevel: 0
-  storyText: "{s=10}\" \uADF8 \uAC70\uB300 \uC288\uD37C \uCEF4\uD4E8\uD130\uAC00
-    \uBC14\uB85C {$PlayerName}\uB2D8\uC774 \uD604\uC7AC \uC788\uB294 \uC774 [\uD53C\uB77C\uBBF8\uB4DC]\uC785\uB2C8\uB2E4.
-    \""
+  storyText: "{s=10}\uADF8 \uAC70\uB300 \uC288\uD37C \uCEF4\uD4E8\uD130\uAC00 \uBC14\uB85C
+    {$PlayerName}\uB2D8\uC774 \uD604\uC7AC \uC788\uB294 \uC774 [ {c=brown}\uD53C\uB77C\uBBF8\uB4DC
+    {c=white}]\uC785\uB2C8\uB2E4."
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -37377,9 +37375,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 243
   indentLevel: 0
-  storyText: "{s=10}\" \uADF8\uB807\uAE30\uC5D0 \uC778\uB958\uB294 \uC774 \uC678\uACC4
+  storyText: "{s=10}\uADF8\uB807\uAE30\uC5D0 \uC778\uB958\uB294 \uC774 \uC678\uACC4
     \uC0DD\uBA85\uCCB4\uB97C \uB9C9\uAE30 \uC704\uD574 \uAC70\uB300 \uC288\uD37C
-    \uCEF4\uD4E8\uD130\uB97C \uB9CC\uB4E4\uC5C8\uC2B5\uB2C8\uB2E4. \""
+    \uCEF4\uD4E8\uD130\uB97C \uB9CC\uB4E4\uC5C8\uC2B5\uB2C8\uB2E4."
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -37406,8 +37404,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 111
   indentLevel: 0
-  storyText: "{s=10}\" \uADF8\uB54C \uC778\uB958\uB294 \uD604\uC7AC\uBCF4\uB2E4 \uB354
-    \uBB38\uBA85\uC774 \uBC1C\uC804\uD574 \uC788\uC5C8\uC2B5\uB2C8\uB2E4. \""
+  storyText: "{s=10}\uADF8\uB54C \uC778\uB958\uB294 \uD604\uC7AC\uBCF4\uB2E4 \uB354
+    \uBB38\uBA85\uC774 \uBC1C\uC804\uD574 \uC788\uC5C8\uC2B5\uB2C8\uB2E4."
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -37434,9 +37432,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 112
   indentLevel: 0
-  storyText: "{s=10}\" \uC0AC\uC2E4\uC740 \uC774 \uC9C0\uAD6C\uC5D0 \uC57D 4700\uB144
-    \uC804 \uC678\uACC4 \uC0DD\uBA85\uCCB4\uAC00 \uC9C0\uAD6C\uB97C \uCE68\uACF5\uD588\uC2B5\uB2C8\uB2E4.
-    \""
+  storyText: "{s=10}\uC0AC\uC2E4\uC740 \uC774 \uC9C0\uAD6C\uC5D0 \uC57D 4,700\uB144
+    \uC804 \uC678\uACC4 \uC0DD\uBA85\uCCB4\uAC00 \uC9C0\uAD6C\uB97C \uCE68\uACF5\uD588\uC2B5\uB2C8\uB2E4."
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -37463,7 +37460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 98
   indentLevel: 0
-  storyText: "{s=10}\" \uB124...? \uC81C...\uC81C\uAC00\uC694? \""
+  storyText: "{s=10}\uB124...? \uC81C...\uC81C\uAC00\uC694?"
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -37490,8 +37487,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 97
   indentLevel: 0
-  storyText: "{s=10}\" \uC9C0\uAE08\uBD80\uD130 \uC911\uC694\uD55C \uACB0\uC815\uC744
-    \uD558\uC154\uC57C \uB429\uB2C8\uB2E4..\""
+  storyText: "{s=10}\uC9C0\uAE08\uBD80\uD130 \uC911\uC694\uD55C \uACB0\uC815\uC744
+    \uD574\uC8FC\uC154\uC57C \uB429\uB2C8\uB2E4..."
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -37518,8 +37515,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 110
   indentLevel: 0
-  storyText: "{s=10}\" {$PlayerName}\uB2D8 \uB2F9\uD669\uD558\uC9C0 \uB9D0\uACE0
-    \uB4E4\uC73C\uC138\uC694\""
+  storyText: "{s=10}{$PlayerName}\uB2D8 \uC9C0\uAE08\uBD80\uD130 \uB2F9\uD669\uD558\uC9C0
+    \uB9D0\uACE0 \uB4E4\uC73C\uC138\uC694."
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -37546,8 +37543,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 90
   indentLevel: 0
-  storyText: "{s=10}\" \uCE74\uB974\uB9CC\uB2D8? \uC9C0\uAE08 \uBB34\uC2A8 \uB9D0\uC744
-    \uD558\uB294 \uAC70\uC8E0? \""
+  storyText: "{s=10}\uCE74\uB974\uB9CC\uB2D8? \uC9C0\uAE08 \uBB34\uC2A8 \uB9D0\uC744
+    \uD558\uB294 \uAC70\uC8E0?"
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -37574,8 +37571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 109
   indentLevel: 0
-  storyText: "{s=10}\" ...\uC815\uB9D0...\uC815\uB9D0 \uC2E4\uD589\uC774 \uB418\uB124...
-    \""
+  storyText: "{s=10}\uC815\uB9D0... \uC815\uB9D0 \uC2E4\uD589\uC774 \uB418\uB124..."
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -37602,7 +37598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 93
   indentLevel: 0
-  storyText: '{s=10}" ... "'
+  storyText: '{s=10}...'
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -37629,8 +37625,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 85
   indentLevel: 0
-  storyText: "{s=10}\" \uCE74\uB974\uB9CC\uB2D8...? \uC6D0\uB798 \uC774\uB807\uAC8C
-    \uB418\uB294 \uAC70 \uB9DE\uB098\uC694? \""
+  storyText: "{s=10}\uCE74\uB974\uB9CC\uB2D8...? \uC6D0\uB798 \uC774\uB807\uAC8C
+    \uB418\uB294 \uAC70 \uB9DE\uB098\uC694?"
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -37657,7 +37653,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 83
   indentLevel: 0
-  storyText: "{s=10}\" \uC6B0\uC641! \uC800\uAC8C \uBB50\uC5EC! \""
+  storyText: "{s=10}\uC6B0\uC641! \uC800\uAC8C \uBB50\uC5EC!"
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -37726,10 +37722,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 241
   indentLevel: 0
-  storyText: "{s=10}[ \uC655\uAD00\uAE4C\uC9C0 \uAF43\uB294 \uC21C\uAC04 \uD30C\uB77C\uC624
-    \uAD00\uC5D0\uC11C \uBE5B\uC774 \uB09C\uB2E4 ]"
+  storyText: "{s=10}\uC655\uAD00\uAE4C\uC9C0 \uAF43\uB294 \uC21C\uAC04 \uD30C\uB77C\uC624
+    \uAD00\uC5D0\uC11C \uBE5B\uC774 \uB09C\uB2E4."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 310039286}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -37754,10 +37750,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 94
   indentLevel: 0
-  storyText: "{s=10}[ \uAD00\uC5D0 \uC783\uC5B4\uBC84\uB9B0 \uC720\uBB3C\uB4E4\uC744
-    \uAF43\uB294\uB2E4 ]"
+  storyText: "{s=10}\uAD00\uC5D0 \uC783\uC5B4\uBC84\uB9B0 \uC720\uBB3C\uB4E4\uC744
+    \uAF43\uB294\uB2E4."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 310039286}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -37782,7 +37778,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 240
   indentLevel: 0
-  storyText: "{s=10}\" \uC790...\uC774\uC81C \uAF43\uC73C\uC2DC\uBA74 \uB429\uB2C8\uB2E4\""
+  storyText: "{s=10}\uC790.. \uC774\uC81C \uAF43\uC73C\uC2DC\uBA74 \uB429\uB2C8\uB2E4."
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -37809,9 +37805,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 84
   indentLevel: 0
-  storyText: "{s=10}' \uC5EC\uAE34 \uC815\uB9D0 \uBA87 \uBC88\uC744 \uB2E4\uC2DC
-    \uC624\uB4E0 \uC775\uC219\uD574\uC9C0\uC9C0 \uC54A\uC744 \uAC83 \uAC19\uB2E4.
-    '"
+  storyText: "{s=10}(\uC5EC\uAE34 \uC815\uB9D0 \uBA87 \uBC88\uC744 \uB2E4\uC2DC \uC624\uB4E0
+    \uC775\uC219\uD574\uC9C0\uC9C0 \uC54A\uC744 \uAC83 \uAC19\uB2E4.)"
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -37823,7 +37818,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1362956713}
 --- !u!114 &2113774223
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -37838,10 +37833,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 80
   indentLevel: 0
-  storyText: "{s=10}[  \uD30C\uB77C\uC624 \uAD00\uC758 \uBC29\uC73C\uB85C \uAC04\uB2E4
-    ]"
+  storyText: "{s=10}\uD30C\uB77C\uC624 \uAD00\uC758 \uBC29\uC73C\uB85C \uAC04\uB2E4."
   description: 
-  character: {fileID: 883136813}
+  character: {fileID: 310039286}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -37866,7 +37860,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 78
   indentLevel: 0
-  storyText: "{s=10}\" \uB124\uB124 \""
+  storyText: "{s=10}\uB124\uB124"
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -37893,8 +37887,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 77
   indentLevel: 0
-  storyText: "{s=10}\" \uC774\uC81C \uC774\uAC83\uB4E4\uC744 \uD30C\uB77C\uC624 \uAD00\uC5D0
-    \uAF42\uC73C\uBA74 \uB418\uB294 \uAC70\uC8E0? \""
+  storyText: "{s=10}\uC774\uC81C \uC774\uAC83\uB4E4\uC744 \uD30C\uB77C\uC624 \uAD00\uC5D0
+    \uAF42\uC73C\uBA74 \uB418\uB294 \uAC70\uC8E0?"
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -37921,8 +37915,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 76
   indentLevel: 0
-  storyText: "{s=10}\" \uC5ED\uC2DC {$PlayerName}\uB2D8\uC740 \uB2E4 \uD558\uC2E4
-    \uC218 \uC788\uC744 \uAC70\uB77C \uBBFF\uC5C8\uC2B5\uB2C8\uB2E4. \""
+  storyText: "{s=10}\uC5ED\uC2DC {$PlayerName}\uB2D8\uC740 \uB2E4 \uD558\uC2E4 \uC218
+    \uC788\uC744 \uAC70\uB77C \uBBFF\uC5C8\uC2B5\uB2C8\uB2E4."
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -37949,7 +37943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 75
   indentLevel: 0
-  storyText: "{s=10}\" \uC624 \uB2E4 \uCC3E\uC73C\uC168\uAD70\uC694? \""
+  storyText: "{s=10}\uC624 \uB2E4 \uCC3E\uC73C\uC168\uAD70\uC694?"
   description: 
   character: {fileID: 1349317746}
   portrait: {fileID: 0}
@@ -37976,7 +37970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 239
   indentLevel: 0
-  storyText: "{s=10}\" \uC0DD\uAC01\uBCF4\uB2E4 \uBE61\uC13C\uB370? \""
+  storyText: "{s=10}\uC0DD\uAC01\uBCF4\uB2E4 \uBE61\uC13C\uB370?"
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -38003,7 +37997,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 74
   indentLevel: 0
-  storyText: "{s=10}\" \uC640! \uB2E4 \uBAA8\uC558\uB2E4. \""
+  storyText: "{s=10}\uC640! \uB2E4 \uBAA8\uC558\uB2E4."
   description: 
   character: {fileID: 883136813}
   portrait: {fileID: 0}
@@ -39042,6 +39036,80 @@ MonoBehaviour:
   targetObject: {fileID: 1583981151}
   methodName: NameChange
   delay: 0
+--- !u!114 &2113774258
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113774141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 460
+  indentLevel: 0
+  spriteRenderer: {fileID: 0}
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 3
+  _targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 1}
+  waitUntilFinished: 0
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &2113774259
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113774141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 459
+  indentLevel: 0
+  duration: 0
+  fadeOut: 0
+  targetView: {fileID: 212510830}
+  waitUntilFinished: 0
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  targetCamera: {fileID: 0}
+  fadeTweenType: 4
+  orthoSizeTweenType: 4
+  posTweenType: 4
+  rotTweenType: 4
+--- !u!114 &2113774260
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113774141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 458
+  indentLevel: 0
+  duration: 0
+  fadeOut: 0
+  targetView: {fileID: 212510830}
+  waitUntilFinished: 0
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  targetCamera: {fileID: 0}
+  fadeTweenType: 4
+  orthoSizeTweenType: 4
+  posTweenType: 4
+  rotTweenType: 4
 --- !u!1 &2138119065
 GameObject:
   m_ObjectHideFlags: 0
