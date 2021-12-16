@@ -9,6 +9,5 @@ public class ChangeName : MonoBehaviour
     public void NameChange()
     {
         Name.nameText = input.text;
-        
     }
 }

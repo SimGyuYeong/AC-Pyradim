@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChangeRobotName : MonoBehaviour
+public class ChangeCharaterName : MonoBehaviour
 {
     [SerializeField] private Fungus.Character Name;
     [SerializeField] private Fungus.Character PlayerName;
@@ -11,10 +11,14 @@ public class ChangeRobotName : MonoBehaviour
 
     public void NameChange()
     {
-        var name = chart.Variables[3];
-
+        var name = chart.Variables[2];
         Name.nameText = "Ä«¸£¸¸";
-        Destroy(gameObject);
+        PlayerName.nameText = name.ToString();
+    }
+
+    public void afterNameChange()
+    {
+        var name = chart.Variables[2];
         PlayerName.nameText = name.ToString();
     }
 }
